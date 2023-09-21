@@ -1,0 +1,378 @@
+/* Header CSS */
+
+.header {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  position: relative;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.hamburger-icon {
+  height: 25px;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 220px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  margin-left: -450px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  font-family: brush script mt, cursive;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 45px;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.search-icon {
+  height: 18px;
+}
+
+.user-icon {
+  height: 20px;
+}
+
+.cart-icon {
+  height: 20px;
+}
+
+.order-online-button {
+  height: 35px;
+  width: 150px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border: none;
+  background-color: rgb(169, 100, 10);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.order-online-button:hover {
+  background-color: rgb(180, 131, 67);
+}
+
+/* General CSS-Starts */
+
+.restaurant-title {
+  color: white;
+  padding: 40px;
+}
+
+/* General CSS-Ends */
+
+/* Main Page CSS */
+
+/* Promotion Area-Starts */
+.background-picture {
+  display: block;
+  height: 833px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: -39px;
+}
+
+.promotion-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 190px;
+}
+
+.first-promotion,
+.second-promotion {
+  margin-top: 830px;
+  background-color: rgb(41, 40, 40);
+  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.second-promotion {
+  margin-left: -85px;
+}
+
+.promotion-picture {
+  display: inline-block;
+  width: 180px;
+}
+
+.promotion-info {
+  display: inline-block;
+  width: 400px;
+}
+
+.first-item {
+  width: 90%;
+  border-radius: 100px;
+  border-width: 4px;
+  border-color: white;
+  border-style: solid;
+}
+
+.promotion-one {
+  color: white;
+  font-family: brush script mt, cursive;
+  font-size: 26px;
+}
+
+.promotion-two {
+  color: white;
+  font-family: brush script mt, cursive;
+  font-size: 18px;
+}
+
+.promotion-button {
+  height: 35px;
+  width: 140px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border: none;
+  background-color: rgb(169, 100, 10);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.7s, color;
+  transition: background-color 0.5s;
+}
+
+.promotion-button:hover {
+  background-color: rgb(180, 131, 67);
+}
+
+/* Promotion Area-Ends */
+
+/* Menu-Nav-bar-Starts */
+
+.Menu {
+  font-size: 50px;
+  text-align: center;
+  margin: 110px auto 0;
+  font-family: brush script mt, cursive;
+}
+
+nav {
+  position: relative;
+  margin: 40px auto 0;
+  width: 550px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 0;
+  background: #34495e;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  border-radius: 30px;
+  transition: all 0.5s ease 0s;
+  background: rgb(41, 40, 40);
+}
+
+nav a:nth-child(1) {
+  width: 100px;
+}
+
+nav .start-home,
+a:nth-child(1):hover ~ .animation {
+  width: 100px;
+  left: 0;
+}
+
+nav a:nth-child(2) {
+  width: 110px;
+}
+
+nav a:nth-child(2):hover ~ .animation {
+  width: 110px;
+  left: 100px;
+}
+
+nav a:nth-child(3) {
+  width: 100px;
+}
+
+nav a:nth-child(3):hover ~ .animation {
+  width: 100px;
+  left: 210px;
+}
+
+nav a:nth-child(4) {
+  width: 110px;
+}
+
+nav a:nth-child(4):hover ~ .animation {
+  width: 110px;
+  left: 310px;
+}
+
+nav a:nth-child(5) {
+  width: 120px;
+}
+
+nav a:nth-child(5):hover ~ .animation {
+  width: 120px;
+  left: 420px;
+}
+
+/* Menu-Nav-bar-Ends */
+
+/* Menu-Items-Starts */
+
+.items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 70px 120px 0 120px;
+  row-gap: 30px;
+}
+
+.menu-items {
+  width: 350px;
+  height: 400px;
+  border-width: 0.5px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(41, 40, 40);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+.item-preview {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 160px;
+  overflow: hidden;
+  transition: transform 4ms;
+  cursor: pointer;
+}
+
+.item-preview:hover .item-picture {
+  transform: scale(1.1);
+}
+
+.item-picture {
+  height: 120px;
+}
+
+.item-description {
+  margin: 25px;
+}
+
+.item-name {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: brush script mt, cursive;
+  font-size: 24px;
+}
+
+.item-info {
+  margin: 0;
+  color: white;
+}
+
+.item-price {
+  color: white;
+  margin-bottom: 0;
+}
+
+.buy-now {
+  height: 20px;
+  background-color: yellowgreen;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.buy-now-href {
+  margin-left: 280px;
+}
+
+/* Menu-Items-Ends */
+
+.footer-details {
+  background-color: rgb(41, 40, 40);
+  margin-top: 100px;
+  height: 400px;
+  width: 1481px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-p {
+  text-align: center;
+  margin-top: 0;
+  color: white;
+  font-size: 16px;
+}
+
+.footer-p-header {
+  text-align: center;
+  margin-top: 0;
+  font-family: brush script mt, cursive;
+  font-size: 26px;
+  color: white;
+}
+
+.contact-details,
+.slogan-details,
+.opening-hours-details {
+  margin-top: 100px;
+}
+
+.copyrights-details {
+  text-align: center;
+  margin-top: 75px;
+  color: white;
+}
